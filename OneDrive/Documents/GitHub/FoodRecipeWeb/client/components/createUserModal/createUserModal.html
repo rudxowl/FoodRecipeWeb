@@ -1,0 +1,74 @@
+<div class="modal-content">
+  <form id="createUser" name="createUser" role="form" class="form-horizontal">
+    <div class="modal-header">
+      <button type="button" ng-click="createUserController.cancel()" class="close">
+        <span aria-hidden="true">×</span>
+        <span class="sr-only">Close</span>
+      </button>
+      <h4 id="myModalLabel" class="modal-title">Creating User</h4>
+    </div>
+    <div class="modal-body">
+      <div role="alert" ng-show="createUserController.formError" class="alert alert-danger">{{ createUserController.formError }}</div>
+      <div role="alert" ng-show="createUserController.formInfo" class="alert alert-info">{{ createUserController.formInfo }}</div>
+      <div class="form-group">
+        <label for="age" class="col-xs-2 col-sm-2 control-label">Age</label>
+        <div class="col-xs-10 col-sm-10">
+          <input id="age" name="age" required="required" ng-model="createUserController.user.age" class="form-control" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="age" class="col-xs-2 col-sm-2 control-label">First Name</label>
+        <div class="col-xs-10 col-sm-10">
+          <input id="First Name" name="First Name" required="required" ng-model="createUserController.user.name.firstName" class="form-control" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="age" class="col-xs-2 col-sm-2 control-label">Middle Name</label>
+        <div class="col-xs-10 col-sm-10">
+          <input id="Middle Name" name="Middle Name" ng-model="createUserController.user.name.middleName" class="form-control" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="age" class="col-xs-2 col-sm-2 control-label">Last Name</label>
+        <div class="col-xs-10 col-sm-10">
+          <input id="Last Name" name="Last Name" required="required" ng-model="createUserController.user.name.lastName" class="form-control" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="age" class="col-xs-2 col-sm-2 control-label">Address Line 1</label>
+        <div class="col-xs-10 col-sm-10">
+          <input id="Address Line 1" name="Address Line 1" required="required" ng-model="createUserController.user.address.addressLine1" class="form-control" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="age" class="col-xs-2 col-sm-2 control-label">Address Line 2</label>
+        <div class="col-xs-10 col-sm-10">
+          <input id="Address Line 2" name="Address Line 2" ng-model="createUserController.user.address.addressLine2" class="form-control" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="age" class="col-xs-2 col-sm-2 control-label">City</label>
+        <div class="col-xs-10 col-sm-10">
+          <input id="City" name="City" required="required" ng-model="createUserController.user.address.city" class="form-control" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="age" class="col-xs-2 col-sm-2 control-label">State</label>
+        <div class="col-xs-10 col-sm-10">
+          <input id="State" name="State" required="required" ng-model="createUserController.user.address.state" class="form-control" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="age" class="col-xs-2 col-sm-2 control-label">ZIP</label>
+        <div class="col-xs-10 col-sm-10">
+          <input id="ZIP" name="ZIP" required="required" ng-model="createUserController.user.address.zip" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button ng-click="createUserController.cancel()" type="button" class="btn btndefault">
+        Cancel</button>
+      <button type="submit" class="btn btn-primary" ng-click="createUserController.submitForm()">Create User</button>
+    </div>
+  </form>
+</div>

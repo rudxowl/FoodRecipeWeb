@@ -1,0 +1,6 @@
+MongoDB documentation URL
+https://docs.mongodb.com/
+
+how to construct regular expressions in Mongo
+https://docs.mongodb.com/manual/reference/operator/query/regex/
+

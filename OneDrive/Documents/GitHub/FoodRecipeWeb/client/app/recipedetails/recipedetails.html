@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Recipe Details</h1>
+      <br>
+      <h3>
+        <a ng-href="/">Home</a>
+      </h3>
+      <h4>ID: {{recipeDetailsController.recipe._id}}</h4>
+      <h4>Description: {{recipeDetailsController.recipe.description}}</h4>
+      <h4>Picture:
+        <a ng-href="{{recipeDetailsController.recipe.picture}}">{{recipeDetailsController.recipe.picture}}</a>
+      </h4>
+      <h4>Prep Time: {{recipeDetailsController.recipe.preptime}}</h4>
+      <h4>Cook Time: {{recipeDetailsController.recipe.cooktime}}</h4>
+      <h4>Directions: {{recipeDetailsController.recipe.directions}}</h4>
+      <h4>Ingredients: {{recipeDetailsController.recipe.ingredients.ingredients}}</h4>
+      <h4 ng-repeat="review in recipeDetailsController.recipe.reviews">Reviews:
+        <a ng-href="/recipes/{{recipeDetailsController.recipe._id}}/reviews/{{review}}">{{review}}</a>,
+      </h4>
+    </div>
+  </div>
+</div>

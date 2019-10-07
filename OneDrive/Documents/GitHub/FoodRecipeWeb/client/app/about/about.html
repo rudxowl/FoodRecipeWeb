@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">About Page</h1>
+    </div>
+    <div>
+      Name: {{ aboutController.about.name.first }}
+      {{ aboutController.about.name.last }}
+    </div>
+    <div>
+      Email: <a ng-href="mailto:{{aboutController.about.email}}">
+      {{aboutController.about.email}}</a>
+    </div>
+    <div>
+      Course Number: {{aboutController.about.course}}
+    </div>
+  </div>
+</div>
